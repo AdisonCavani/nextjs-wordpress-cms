@@ -1,5 +1,4 @@
 const shouldAnalyzeBundles = process.env.ANALYZE === 'true'
-const withPreact = require('next-plugin-preact')
 
 /** @type {import('next').NextConfig} */
 let nextConfig = {
@@ -7,7 +6,6 @@ let nextConfig = {
 
   experimental: {
     legacyBrowsers: false,
-    browsersListForSwc: true
   },
 
   images: {
@@ -20,7 +18,7 @@ if (shouldAnalyzeBundles) {
     openAnalyzer: true,
     enabled: true
   })
-  nextConfig = withBundleAnalyzer(withPreact(nextConfig))
+  nextConfig = withBundleAnalyzer(nextConfig)
 }
 
-module.exports = withPreact(nextConfig)
+module.exports = nextConfig
