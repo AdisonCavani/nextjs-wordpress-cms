@@ -5,7 +5,8 @@ let nextConfig = {
   reactStrictMode: true,
 
   experimental: {
-    legacyBrowsers: false,
+    appDir: true,
+    legacyBrowsers: false
   },
 
   images: {
