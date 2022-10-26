@@ -1,10 +1,8 @@
-import type { NextPage } from 'next'
-
-const Home: NextPage = () => {
+const Home = () => {
   return (
-    <div>
-      <p className="flex text-center">Hello world!</p>
-    </div>
+    <main>
+      <p className="text-center">Hello world!</p>
+    </main>
   )
 }
 

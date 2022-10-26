@@ -1,8 +1,11 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+import '@styles/globals.css'
+import { ReactNode } from 'react'
+
+type Props = {
+  children: ReactNode
+}
+
+const RootLayout = ({ children }: Props) => {
   return (
     <html>
       <head></head>
@@ -10,3 +13,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+export default RootLayout
