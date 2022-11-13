@@ -5,8 +5,7 @@ const options = {
   endOfLine: 'lf',
   semi: false,
   tabWidth: 2,
-  trailingComma: 'none',
-  tailwindConfig: './tailwind.config.js'
+  trailingComma: 'none'
 }
 
 module.exports = options
